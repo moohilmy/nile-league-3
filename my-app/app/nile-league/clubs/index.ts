@@ -228,7 +228,7 @@ const clubsList: ClubsType[]  = [
   {
     id: 5,
     name: "Ghazl El Mahalla",
-    image: "/team-logo/ghazl.svg",
+    image: "/team-logo/Ghazl.svg",
     sloganName: "Leader of the Delta",
     player: [
       {
