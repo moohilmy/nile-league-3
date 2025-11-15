@@ -1,0 +1,104 @@
+.teamsList {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.clubItemCard {
+  width: calc((100% - 2 * 2rem) / 3);
+  position: relative;
+}
+.clubItemImg {
+  position: relative;
+  width: 10rem;
+  aspect-ratio: 1/1;
+}
+
+.clubItemHeadng {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.1rem 1.1rem 0 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+.clubItemHeadng::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--club-color-background);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 1;
+}
+.clubItemHeadng:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--team-slogan);
+  background-size: 60%;
+  background-position: left;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 2;
+  transition: all 0.8s ease-out;
+}
+.clubItemCard:hover .clubItemHeadng::after {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+.teamInfoCard {
+  background: var(--SecondColor);
+  background: linear-gradient(
+    65deg,
+    var(--SecondColor) 0%,
+    var(--light-purple) 100%
+  );
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .clubItemCard {
+    width: calc((100% - 1 * 2rem) / 2);
+  }
+  .clubItemImg {
+    width: 6rem;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .clubItemCard {
+    width: 100%;
+    display: flex;
+  }
+  .clubItemHeadng{
+    border-radius: 0;
+    padding: 1rem;
+  }
+  .teamInfoCard{
+    flex: 1;
+  } 
+}
+@media (max-width: 500px) {
+  .clubItemHeadng{
+    padding: .5rem;
+  }
+  .clubItemImg{
+    width: 4rem;
+  }
+}

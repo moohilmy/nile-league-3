@@ -1,0 +1,43 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.statsheader {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+.percent {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.statsBar {
+  height: 0.7rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--warm-gray);
+}
+.statspercent {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  background-color: var(--club-primary-color);
+}
+.statsHomeTeam {
+  left: 0;
+}
+.statsAwayTeam {
+  right: 0;
+}
+.statsName {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: 700;
+}

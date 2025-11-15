@@ -1,0 +1,20 @@
+.EventSubInfo {
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-items: center;
+}
+.TvIcon {
+  width: 3rem;
+  aspect-ratio: 1;
+  position: relative;
+}
+@media (width < 768px) {
+  .EventSubInfo {
+    order: -1;
+    width: 100%;
+  }
+}

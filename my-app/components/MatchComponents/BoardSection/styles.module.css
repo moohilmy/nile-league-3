@@ -1,0 +1,29 @@
+.boardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.timeBox,
+.resultBox {
+  padding: 1.2rem 1.8rem;
+  border-radius: 18px;
+}
+.resultBox {
+  background: var(--warm-gray);
+}
+.timeBox {
+  background-color: var(--SecondColor);
+}
+@media (width < 768px) {
+  .boardSection {
+    gap: 0.3rem;
+    font-size: 1.5rem;
+  }
+  .resultBox,
+  .timeBox {
+    padding: 1rem 1.4rem;
+  }
+}

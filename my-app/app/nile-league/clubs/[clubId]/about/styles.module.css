@@ -1,0 +1,139 @@
+.clubInfo {
+  display: flex;
+  background-color: var(--warm-gray);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.clubInfoContent {
+  flex: 1;
+}
+.clubInfoList {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+}
+.clubInfoItem {
+  display: flex;
+  width: 100%;
+}
+.clubInfoItem:nth-child(even){
+  background-color: #000000;
+}
+.clubInfoImg {
+  position: relative;
+  width: 25rem;
+  height: 20rem;
+  overflow: hidden;
+}
+.imgHover {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  opacity: 0.2;
+  left: 0;
+  background: var(--club-color-background);
+  z-index: 2;
+}
+.summary {
+  display: flex;
+  padding: 1.8rem 0;
+  gap: 1.5rem;
+}
+.summaryCountent {
+  flex: 1;
+}
+.summaryTitle {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.1rem;
+}
+.summaryParagraph {
+  font-size: 0.9rem;
+  color: var(--prime-text-color);
+}
+.summaryImg {
+  position: relative;
+  width: 28rem;
+  height: 18rem;
+}
+.achievementWall {
+  display: flex;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--warm-gray);
+  flex-direction: column;
+  align-items: center;
+}
+.achievementWallTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.achievementWallContent {
+  padding: 0 0.5rem;
+  width: 100%;
+}
+.achievementWallList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+.achievementItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.cupImagContainer {
+  width: 5rem;
+  aspect-ratio: 9 /16;
+  position: relative;
+}
+.clubImg {
+  object-fit: contain;
+  filter: brightness(25%);
+  transition: all 0.2s;
+}
+.clubImgActive {
+  filter: brightness(100%);
+}
+.countOfCup {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  padding: 0.4rem;
+  background-color: var(--SecondColor);
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 50%;
+  border: 3.5px solid var(--light-purple);
+}
+
+@media (max-width: 768px) {
+  .clubInfo {
+    flex-direction: column-reverse;
+  }
+  .clubInfoImg {
+    width: 100%;
+  }
+  .summary {
+    flex-direction: column;
+  }
+  .summaryImg {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+  .achievementWallTitle {
+    font-size: 1.8rem;
+  }
+}

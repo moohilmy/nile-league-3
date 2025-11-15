@@ -1,0 +1,130 @@
+.matchweekTitle {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.matchweekList {
+  display: flex;
+  gap: 10px;
+  container-type: inline-size;
+  background-color: var(--warm-gray);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 0;
+}
+.matchweekItem {
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+
+  cursor: pointer;
+  display: flex;
+}
+.matchweekItem:not(:last-child)::after {
+  content: "";
+  background-color: var(--SecondColor);
+  position: absolute;
+  height: 0.1rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 55.06rem;
+  width: 100%;
+}
+.matchStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.matchStatusContent {
+  font-size: 0.6rem;
+  line-height: 140%;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+}
+.matchInfo {
+  background-color: var(--foreground);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  flex-grow: 1;
+  width: 100%;
+}
+.matchContiner {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.teamInfo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.teamLogoImage {
+  padding: 0.5rem;
+}
+
+.scoreContainer {
+  height: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--SecondColor);
+  font-weight: 700;
+  display: flex;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+.teamTitles {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.teamName {
+  text-transform: capitalize;
+}
+.teamShortName {
+  display: none;
+}
+@container (max-width: 640px) {
+  .matchweekItem {
+    row-gap: 0.5rem;
+    padding: .5rem;
+  }
+  .matchweekItem::after {
+    width: 10.72rem;
+  }
+  .matchStatus {
+    align-self: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    flex-direction: row;
+  }
+  .matchweekItem {
+    flex-direction: column-reverse;
+    row-gap: 0.5rem;
+  }
+  .teamName {
+    display: none;
+  }
+  .teamShortName {
+    display: block;
+    text-transform: uppercase;
+  }
+}

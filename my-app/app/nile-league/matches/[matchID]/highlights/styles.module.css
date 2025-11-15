@@ -1,0 +1,35 @@
+.highlightsPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.highlightsContainer{
+  padding: 1rem;
+  margin-top: 4rem;
+}
+.videoContainer {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.videoInfo {
+  display: flex;
+  direction: rtl;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+  gap: .2rem;
+  justify-content: space-between;
+}
+.videoDate {
+    background: var(--SecondColor);
+    font-size: .6rem;
+    font-weight: 900;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem .6rem;
+}
+.videoTitle{
+    font-size: .8rem;
+    font-weight: 700;
+}

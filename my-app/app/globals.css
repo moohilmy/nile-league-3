@@ -1,0 +1,348 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+  --SecondColor: #68289e;
+  --light-purple: #b99cd1;
+  --warm-gray: #363636;
+  --soft-ivory: #f3e9dc;
+  --red-color: #c00e0e;
+  --prime-text-color: #898989;
+  --green-color: #00b25f;
+  --gray-color: #c3b3c5;
+  --orange-color: #f9a800;
+}
+.nile-league-wrapper {
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90rem;
+}
+.page-content-space {
+  margin: 2.5rem auto;
+}
+.nile-league-header {
+  margin-bottom: 1.4rem;
+  text-transform: capitalize;
+  line-height: 2rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.nile-league-link {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .nile-league-wrapper {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+}
+body {
+  font-family: "alexandria", serif;
+}
+.live-now {
+  color: var(--red-color);
+  animation: live-now 2s infinite;
+  -webkit-animation: live-now 2s infinite;
+}
+.img-header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.imgBackground {
+  width: 100%;
+  transition: all 0.2s;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+.img-header:hover .imgBackground {
+  background-image: linear-gradient(90deg, #7132a747 0%, #89709f96 100%);
+  z-index: 1;
+  opacity: 1;
+}
+.img-header:hover .imgAnimation {
+  transform: scale(1.1);
+}
+.is-active,
+.card-lazy-background {
+  opacity: 1 !important;
+}
+@keyframes live-now {
+  0% {
+    opacity: 65%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 65%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+}
+.fromItem {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #c3b3c5;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 700;
+  justify-content: center;
+}
+.win {
+  background-color: var(--green-color);
+}
+.draw {
+  background-color: var(--gray-color);
+}
+.lose {
+  background-color: var(--red-color);
+}
+.landing-image-page {
+  width: 90%;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+  margin-top: -3rem;
+  border-radius: 0.6rem;
+}
+.t1 {
+  /* الأهلي - Al Ahly */
+  --club-color-background: linear-gradient(100.38deg, #620000fc 0, #c00e0e 71%);
+  --club-primary-color: #c00e0e;
+  --team-slogan: url(/slogans/alahly-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t2 {
+  /* الزمالك - Zamalek */
+  --club-color-background: linear-gradient(100.38deg, #c9c9c9, #e8e8e8 71%);
+  --club-primary-color: #c9c9c9;
+  --team-slogan: url(/slogans/zamalek-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t3 {
+  /* الإسماعيلي - Ismaily */
+  --club-color-background: linear-gradient(100.38deg, #fdcb15, #ad9300 71%);
+  --club-primary-color: #fdcb15;
+  --team-slogan: url(/slogans/ismaily-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t4 {
+  /* المصري - Al Masry */
+  --club-color-background: linear-gradient(100.38deg, #27d400, #1d5410 71%);
+  --club-primary-color: #195718;
+  --team-slogan: url(/slogans/almasry-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t5 {
+  /* غزل المحلة - Ghazl El Mahalla */
+  --club-color-background: linear-gradient(100.38deg, #00bfe9, #00a1c5 71%);
+  --club-primary-color: #00bfe9;
+  --team-slogan: url(/slogans/ghazl-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t6 {
+  /* بيراميدز - Pyramids */
+  --club-color-background: linear-gradient(100.38deg, #99bfff, #2c3c6f 71%);
+  --club-primary-color: #2c3c6f;
+  --team-slogan: url(/slogans/pyramids-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t7 {
+  /* الاتحاد السكندري - Al Ittihad Alexandria */
+  --club-color-background: linear-gradient(100.38deg, #026937, #028a48);
+  --club-primary-color: #026937;
+  --team-slogan: url(/slogans/alittihad-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t8 {
+  /* سموحة - Smouha SC */
+  --club-color-background: linear-gradient(100.38deg, #0a3077, #0073cf 71%);
+  --club-primary-color: #0073cf;
+  --team-slogan: url(/slogans/smouha-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t9 {
+  /* سيراميكا كليوباترا - Ceramica Cleopatra */
+  --club-color-background: linear-gradient(100.38deg, #5f0300, #c21913 71%);
+  --club-primary-color: #c00e0e;
+  --team-slogan: url(/slogans/ceramica-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t10 {
+  /* فيوتشر إف سي - Future FC */
+  --club-color-background: linear-gradient(100.38deg, #2a8447, #2a8447 71%);
+  --club-primary-color: #2a8447;
+  --team-slogan: url(/slogans/modren-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t11 {
+  /* بتروجيت - Petrojet */
+  --club-color-background: linear-gradient(100.38deg, #790400, #bd1812);
+  --club-primary-color: #c4161c;
+  --team-slogan: url(/slogans/petrojet-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t12 {
+  /* الجونة - El Gouna */
+  --club-color-background: linear-gradient(100.38deg, #dfdfdf, #ffcb27 71%);
+  --club-primary-color: #ffcb27;
+  --team-slogan: url(/slogans/elgouna-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t13 {
+  /* نادي البنك الأهلي - National Bank SC */
+  --club-color-background: linear-gradient(100.38deg, #e44b03, #d34300 71%);
+  --club-primary-color: #e44b03;
+  --team-slogan: url(/slogans/bank-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t14 {
+  /* فاركو - Pharco FC */
+  --club-color-background: linear-gradient(100.38deg, #b87500, #fda209 71%);
+  --club-primary-color: #fba409;
+  --team-slogan: url(/slogans/pharco-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t15 {
+  /* إنبي - ENPPI */
+  --club-color-background: linear-gradient(100.38deg, #2c3059, #0a162c 71%);
+  --club-primary-color: #2c3059;
+  --team-slogan: url(/slogans/enppi-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t16 {
+  /* زد إف سي - ZED FC */
+  --club-color-background: linear-gradient(100.38deg, #786f6f, #574a4d 71%);
+  --club-primary-color: #574a4d;
+  --team-slogan: url(/slogans/zed-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t17 {
+  /* حرس الحدود - Haras El Hodood */
+  --club-color-background: linear-gradient(100.38deg, #a15e00, #a10121 71%);
+  --club-primary-color: #724027;
+  --team-slogan: url(/slogans/haras-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t18 {
+  /* طلائع الجيش - Tala'ea El Gaish */
+  --club-color-background: linear-gradient(100.38deg, #bd0f0f, #c4170b);
+  --club-primary-color: #af1106;
+  --team-slogan: url(/slogans/talaea-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.mediaContentHeading {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 600;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+  transition: transform 0.25s ease-in-out;
+  position: relative;
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .mediaContentHeading {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-SecondColor: var(--SecondColor);
+  --color-lightGold: var(--lightGold);
+  --color-warmGray: var(--warm-gray);
+  --color-softIvory: var(--softIvory);
+  --color-redColor: var(--red-color);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--foreground);
+  --color-accent: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

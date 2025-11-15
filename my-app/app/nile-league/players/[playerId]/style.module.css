@@ -1,0 +1,160 @@
+
+.playerSection{
+    display: flex;
+    gap: 2.5rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+}
+.playerInfoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+.playerInfoSection::after{
+    content: "";
+    position: absolute;
+    background: var(--team-slogan);
+    width: 100%;
+    filter: contrast(0.5);
+    opacity: .25;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    left: 0;
+}
+.playerTeamInfo{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    gap: .8rem;
+}
+.playerName{
+    display: flex;
+    gap: 1.2rem;
+    font-size: var(--font-size-PlayerName);
+    line-height: var(--line-height-PlayerName);
+    font-weight: 600;
+
+}
+.playerNamberKit{
+    opacity: 65%;
+}
+.playerLastName{
+    font-size: var(--font-size-PlayerName);
+    line-height: var(--line-height-PlayerName);
+    font-weight: 600;
+
+}
+.playerTeamLogo{
+    position: relative;
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+}
+.playerInfo{
+    padding-bottom: 1.9rem;
+}
+.playerInfoList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.playerInfoItem{
+    flex-basis: calc(50% - .6rem);
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playerInfoHeading{
+    font-weight: 400;
+    font-size: var(--font-size-infoHeading);
+    line-height: var(--line-height-infoHeading);
+    text-transform: uppercase;
+    color: var(--light-purple);
+}
+.playerInfoContent{
+    font-weight: 600;
+    display: flex;
+    font-size: var(--font-size-infoContent);
+    line-height: var(--line-height-infoContent);
+    align-items: center;
+    gap: .8rem;
+}
+.playerStats{
+    padding-bottom: 2rem;
+}
+.playerStatsList{
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+}
+.playerStatsItem{
+    min-width: 9rem;
+    padding: .8rem;
+    border-radius: .5rem;
+    background: var(--SecondColor);
+}
+.playerStatHeading{
+    font-weight: 700;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    text-transform: capitalize;
+}
+.playerstatContent{
+    font-weight: 800;
+    font-size: var(--font-size-PlayerName);
+    line-height: 1;
+    display: flex;
+    align-items: baseline;
+
+}
+.playerTeamInfo,.playerInfo,.playerStats{
+    border-bottom: 3px solid var(--warm-gray);
+}
+.playerImgSection{
+    display: flex;
+    justify-content: center;
+    min-width: 40%;
+}
+@media (max-width: 768px){
+    .playerSection{
+        flex-direction: column-reverse;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        gap: 0;
+        background-color: var(--club-primary-color);
+    }
+    .playerInfoSection{
+        z-index: 49;
+        background: var(--background);
+        margin-top: -5.2rem;
+        padding: 3.5rem 1rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .playerImgSection{
+        position: sticky;
+        top: 4.25rem;
+    }
+}
+@media (max-width: 480px){
+
+    .playerInfoSection{
+
+        margin-top: -1.1rem
+    }
+    .playerStatsItem{
+        width: 100% !important; 
+    }
+}

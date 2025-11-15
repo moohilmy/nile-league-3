@@ -1,0 +1,63 @@
+.standingsTable {
+  width: 100%;
+  text-align: center;
+}
+
+.standingsTeamInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.standingsFormList {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.standingsFormItem {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  color: var(--background);
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  border-radius: 50%;
+}
+.standingsTableBody {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.standingsTableBody tr {
+  border-bottom: 2px solid var(--warm-gray);
+  border-left: 4px solid transparent;
+}
+.standingsTableBody tr:nth-child(1) {
+  border-left: 4px solid var(--SecondColor);
+}
+.standingsTableBody tr:nth-child(2) {
+  border-left: 4px solid var(--green-color);
+}
+.standingsTableBody tr:nth-child(3) {
+  border-left: 4px solid var(--orange-color);
+}
+.standingsTableBody tr:nth-child(n + 16) {
+  border-left: 4px solid var(--red-color);
+}
+.standingsTableBody td {
+  padding: 1rem 0.2rem;
+  position: relative;
+}
+
+@media (max-width: 465px) {
+  .standingsTableBody {
+    font-size: 0.7rem;
+  }
+}

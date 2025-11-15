@@ -1,0 +1,15 @@
+.positionList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.2rem;
+    justify-content: center;
+    row-gap: 3.1rem;
+    column-gap: 1.4rem;
+}
+.positionHeading{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}

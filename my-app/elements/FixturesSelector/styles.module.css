@@ -1,0 +1,58 @@
+.selectorContainer{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: .65rem;
+  align-items: center;
+}
+.filterContainer{
+  overflow: hidden;
+}
+.filterName {
+  position: relative;
+  padding: .5rem .75rem;
+  border: 3px solid var(--warm-gray);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.filterName:hover {
+  background-color: color-mix(in srgb, var(--light-purple) 20%, transparent);
+}
+
+.title {
+  font-size: .8rem;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.filterHeader {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.overlay {
+  all: unset;
+  position: fixed;
+  inset: 0;
+  background-color: color-mix(in srgb, var(--light-purple) 60%, transparent);
+  z-index: 70;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(80%, 400px);
+  background-color: var(--background);
+  box-shadow: -25px 0px 31px 20px rgba(0, 0, 0, 0.09);
+  z-index: 700;
+  padding: 1.5rem;
+  overflow-y: auto;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

@@ -1,0 +1,93 @@
+.titleofStat{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+.tableContainer {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+.tableHeader {
+    background-color: var(--warm-gray);
+    color: var(--light-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+.tableCenter {
+    text-align: center;
+
+}
+.tableHeader th {
+    padding: .6rem .5rem .6rem 1rem;
+    text-transform: uppercase;
+}
+.TableHeaderRank{
+    text-align: center;
+    font-weight: 800;
+}
+.TableHeaderTotal{
+    text-align: center;
+    font-weight: 800;
+}
+.tableContainer tbody tr{
+    border-bottom: 3px solid var(--warm-gray);
+}
+.tableContainer tbody td{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 1rem;
+    position: relative;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.tableContainer tbody td:hover{
+    text-decoration: underline;
+    color: var(--light-purple);
+    transition: all .3s ease-in-out;
+}
+.TableBodyRank{
+    text-align: center;
+    font-weight: 800;
+}
+.TableBodyTotal{
+    text-align: center;
+    font-weight: 800;
+}
+
+.nationalTD{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    
+    .tableHide {
+        display: none;
+    }
+    .tableHeader{
+        font-size: .65rem;
+    }
+    .tableHeader th{
+        padding: .6rem .5rem .6rem .5rem;
+    }
+    .tableContainer tbody td{
+        font-size: .8rem;
+        line-height: 1.2rem;
+        padding: .5rem;
+    }
+}
+@media (max-width: 480px) {
+
+    .tableContainer tbody td{
+        font-size: .6rem;
+        line-height: 1.2rem;
+        padding: .5rem;
+    }
+
+}

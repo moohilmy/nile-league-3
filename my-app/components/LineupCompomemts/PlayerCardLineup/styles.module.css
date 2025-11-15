@@ -1,0 +1,70 @@
+.playerCardLineup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.playerCardLineupHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.playerCardLineupShirt {
+  width: 65px;
+  height: 65px;
+  color: var(--club-primary-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  align-items: center;
+}
+.playerCardLineupNumber {
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 12px 12px 0 0;
+  padding: 0.25rem 0.5rem;
+  bottom: 0;
+  color: var(--text-color);
+  transform: translate(-50%, -50%);
+}
+.playerCardLineupBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playerCardLineupName {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.playerCardLineupEvent {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: .25rem;
+  color: var(--secondary-text-color);
+}
+.playerCardLineupEventItem{
+  width: 12px;
+  aspect-ratio: 1 / 1;
+}
+@media (max-width: 680px) {
+  .playerCardLineupShirt{
+    width: 50px;
+    height: 30px;
+  }
+  .playerCardLineupName{
+    font-size: 10px;
+  }
+}

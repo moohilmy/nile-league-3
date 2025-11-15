@@ -1,0 +1,88 @@
+.standings-table-header-row {
+  background: var(--warm-gray);
+  color: #ffffff;
+  border-left: 4px solid var(--warm-gray);
+}
+.table-header-cell {
+  padding: 0.8rem 0;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 3%;
+  opacity: 1;
+  text-align: center;
+}
+
+.table-heading-pos {
+  width: 2%;
+}
+.table-heading-form {
+  width: 4%;
+}
+.table-heading-club {
+  width: 18%;
+  text-align: left;
+  padding-left: 0;
+}
+.team-long-name,
+.team-short-name {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.table-body-pts {
+  font-weight: 800;
+}
+.table-body-next {
+  display: flex;
+  justify-content: center;
+}
+.team-short-name {
+  display: none;
+}
+
+@media (max-width: 765px) {
+  .team-long-name {
+    display: none;
+  }
+  .team-short-name {
+    display: block;
+  }
+  .statnding-page .hidden-In-mid-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 465px) {
+  .team-long-name {
+    display: none;
+  }
+  .team-short-name {
+    display: block;
+    font-size: 0.8rem;
+  }
+  .statnding-page .hidden-In-small-screen, .statnding-nav .hidden-In-mid-screen {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .home-nav .statnding-nav tbody tr:nth-child(n + 6) {
+    display: none;
+  }
+  .statnding-nav .table-header-next , .statnding-nav .table-body-next{
+    display:  none;
+  }
+}
+
+@media (min-width: 768px) {
+  .statnding-nav .hide-in-nav {
+    display: none;
+  }
+
+  .statnding-nav .team-long-name,
+  .statnding-nav .team-short-name {
+    font-size: 0.7rem;
+  }
+}

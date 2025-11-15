@@ -1,0 +1,9 @@
+.newsPageSection{
+    margin: 4rem 0;
+}
+.newsContainer{
+    container-type:inline-size;
+    gap: 2.25rem;
+    display: flex;
+    flex-wrap: wrap;
+}

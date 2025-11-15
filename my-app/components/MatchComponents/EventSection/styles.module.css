@@ -1,0 +1,15 @@
+.eventSection {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+.eventAwaySection {
+  align-items: flex-start;
+}
+
+@media (width < 768px) {
+  .eventSection {
+    gap: 0.3rem;
+  }
+}

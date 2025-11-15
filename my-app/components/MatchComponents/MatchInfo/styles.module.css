@@ -1,0 +1,40 @@
+.infoAboutMatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.matchInfoBox {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.35rem;
+  font-weight: 600;
+}
+.infoIcon {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+.infoContent {
+  display: flex;
+  text-transform: capitalize;
+  gap: 0.3rem;
+}
+
+@media (width < 768px) {
+  .infoAboutMatch {
+    order: 8;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.6rem;
+    border-top: 0.1rem solid rgba(201, 206, 214, 0.1);
+  }
+  .matchInfoBox {
+    font-size: 0.7rem;
+  }
+}

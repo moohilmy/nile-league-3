@@ -1,0 +1,25 @@
+.scoreBoardTeam {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.scoreBoardHome{
+    flex-direction: row;
+}
+.scoreBoardAway{
+    flex-direction: row-reverse;
+}
+.scoreBoardteamName{
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.6rem;
+
+    letter-spacing: -0.037rem;
+    text-transform: capitalize;
+}
+@media (width < 768px) {
+    .scoreBoardteamName{
+        display: none;
+    }
+}

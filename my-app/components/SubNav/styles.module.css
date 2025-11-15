@@ -1,0 +1,39 @@
+.Navigation {
+  padding: 1.4rem 0;
+}
+.NavigationList {
+  display: flex;
+  gap: 0.3rem;
+  overflow: auto;
+}
+.NavigationListItem {
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: .9rem;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.4rem 2rem;
+  text-align: center;
+  transition: background 0.3s ease;
+  background: #69289e58;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 2px solid rgba(190, 151, 80, 0.3);
+  color: #ffffff;
+}
+.NavigationListItem:hover{
+    background: var(--SecondColor);
+}
+.NavigationListItemActive{
+    background: var(--SecondColor);
+}
+@media (max-width: 768px){
+    .Navigation{
+      padding: .6rem 0;
+    }
+    .NavigationListItem{
+      padding: 0.3rem .8rem;
+      font-size: .6rem;
+    }
+}

@@ -1,0 +1,43 @@
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.45rem 0;
+    width: 100%;
+    border-top: 1px solid var(--warm-gray);
+    align-items: center;
+}
+.pageCount{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    gap: .2rem;
+}
+.paginationBtns{
+    display: flex;
+    gap: .5rem;
+}
+.btn{
+    border-radius: 50%;
+    background-color: var(--SecondColor);
+    color: var(--foreground);
+    font-size: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+.btn:hover{
+    background-color: var(--warm-gray);
+}
+.btndisable{
+    cursor: default;
+    opacity: .5;
+}
+.btndisable:hover{
+    background-color: var(--SecondColor);
+}

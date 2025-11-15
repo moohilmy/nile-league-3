@@ -1,0 +1,122 @@
+.selectorContainer {
+  display: flex;
+  margin-bottom: 1rem;
+  border: 1px solid var(--warm-gray);
+  border-radius: .5rem;
+  
+}
+.filterbtn{
+    display: none; 
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem .8rem;
+    background-color: var(--background);
+    color: var(--soft-ivory);
+}
+.selectorList,.selectorListOpen{
+    display: flex;
+    z-index: 50;
+    position: relative;
+
+}
+
+.SelectedContainer{
+    position: relative;
+    border-right: 1px solid var(--warm-gray);
+    cursor: pointer;
+}
+.selected{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .8rem;
+    min-width: 12rem;
+    max-width: 14rem;
+}
+
+
+.selectedHeader{
+    display: block;
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--soft-ivory);
+
+}
+.selectedItem{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2;
+
+}
+.filterList{
+    position: absolute;
+    padding: 0 .5rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: var(--warm-gray);
+    max-height: 9rem;
+}
+.filterListItem{
+    color: var(--soft-ivory);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    position: relative;
+}
+.filterListItem:hover{
+    color: var(--light-purple);
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+@media (min-width: 768px){
+    .selectorList,.selectorListOpen{
+        min-height: 70px !important;
+        max-height: 70px !important;
+        opacity: 1 !important;
+    }
+}
+@media (max-width: 768px){
+    .selectorContainer{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .filterbtn{
+        display: flex;
+        width: 100%;
+        position: relative;
+        z-index: 50;
+    }
+    .SelectedContainer{
+        overflow: hidden;
+        background-color: var(--background);
+    }
+    .selectorList{
+        display: none;
+    }
+    .selected{
+        max-width: 100%;
+        min-width: 100%;
+        z-index: 45;
+        position: relative;
+        background-color: var(--background);
+    }
+    .filterList{
+        position: relative;
+    }
+    .selectorListOpen{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .SelectedContainer{
+        border: none;
+    }
+}

@@ -1,0 +1,62 @@
+.teamBackground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.teamHomeBackground::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.6;
+  left: 0;
+  background: linear-gradient(65deg, var(--club-primary-color), #fff0 55%);
+}
+.teamHomeBackground::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  bottom: 0;
+
+  background-image: var(--team-slogan);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+
+  left: -15%;
+}
+.teamAwayBackground::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  background: linear-gradient(285deg, var(--club-primary-color), #fff0 60% 60%);
+}
+.teamAwayBackground::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  bottom: 0;
+  opacity: 0.15;
+
+  right: -15%;
+  background-image: var(--team-slogan);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,27 @@
+.sectionContainer {
+  padding: 0 1rem;
+}
+
+.videoContentContainer {
+  display: flex;
+  margin-top: 2rem;
+}
+.videoContent {
+  width: 100%;
+  height: 100%;
+}
+.videoRelatedContent {
+  width: 53.5rem;
+  padding: 1rem;
+}
+@media (max-width: 945px) {
+  .videoContentContainer {
+    flex-direction: column;
+  }
+  .videoRelatedContent {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+

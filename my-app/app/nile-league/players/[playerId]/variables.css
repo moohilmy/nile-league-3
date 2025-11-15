@@ -1,0 +1,13 @@
+:root{
+    --font-size-PlayerName : 2.75rem;
+    --line-height-PlayerName: 3.25rem;
+    --font-size-infoHeading: 1rem;
+    --line-height-infoHeading: 1.5rem;
+    --font-size-infoContent: 1.25rem;
+    --line-height-infoContent: 1.8rem;
+}
+@media (max-width: 480px){
+    :root{
+        --font-size-PlayerName : 1.7rem;
+        --line-height-PlayerName: 2.4rem;
+    }}

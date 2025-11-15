@@ -1,0 +1,16 @@
+.videoHeader{
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.videoContent{
+    position: relative;
+    display: flex;
+    flex: 1 0 0;
+    flex-basis: auto;
+    flex-direction: column;
+    padding: 1.4rem .8rem;
+}
+

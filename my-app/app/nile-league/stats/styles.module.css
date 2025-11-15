@@ -1,0 +1,12 @@
+.statsPage{
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.statTable{
+
+}
+.tableHeading{
+
+}

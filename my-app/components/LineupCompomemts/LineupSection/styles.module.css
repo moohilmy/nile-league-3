@@ -1,0 +1,24 @@
+.lineUpSection {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  padding: 0.8rem 0;
+}
+.lineUpSectionHome {
+  top: 0;
+  flex-direction: column;
+}
+.lineUpSectionAway {
+  bottom: 0;
+  flex-direction: column-reverse;
+}
+.lineUpRow {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}

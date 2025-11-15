@@ -1,0 +1,33 @@
+.newsSection{
+    display: flex;
+    margin: 2rem 0;
+    flex-direction: row;
+}
+.newsContent{
+    width: 70%;
+
+}
+
+.newsRelated {
+    width: 38.5rem;
+    padding: 1rem;
+  }
+.newsText{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+@media (max-width: 768px){
+    .newsSection{
+        flex-direction: column;
+        
+    }
+    .newsContent{
+        width: 100%;
+    }
+    .newsRelated {
+        container-type:inline-size;
+        width: 100%;
+        margin-top: 2rem;
+      }
+}

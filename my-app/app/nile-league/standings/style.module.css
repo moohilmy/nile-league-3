@@ -1,0 +1,63 @@
+.standingsSection {
+  padding: 1.4rem 1rem;
+  background: var(--background);
+  border-radius: 0.5rem;
+  margin-top: -4rem;
+  position: relative;
+  z-index: 20;
+}
+.standingsHeader{
+    margin-bottom: 1.5rem;
+}
+.standingsHeading{
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+.standingsSubHeader{
+    font-size: .8rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: var(--light-purple);
+}
+.standingsFooter{
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+}
+.standingsKeyHeader{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1.3rem;
+    color: var(--light-purple);
+}
+.standingsKeys{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+.standingsKey{
+    border-left: 6px solid transparent;
+    border-radius: .6rem;
+    padding: 1rem 0 1rem .8rem;
+}
+.champion{
+    border-left: 6px solid var(--SecondColor);
+}
+.CafChampions{
+    border-left: 6px solid var(--green-color);
+}
+.CafConfederation{
+    border-left: 6px solid var(--orange-color);
+}
+.relegation{
+    border-left: 6px solid var(--red-color);
+}

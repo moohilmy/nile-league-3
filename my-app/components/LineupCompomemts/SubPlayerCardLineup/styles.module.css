@@ -1,0 +1,74 @@
+.subPlayerCardLineup {
+  display: flex;
+  width: 100%;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+}
+.subPlayerCardLineupHeader {
+  display: flex;
+}
+.subPlayerCardLineupShirt {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  color: var(--club-primary-color);
+}
+.subPlayerCardLineupNumber {
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 12px 12px 0 0;
+  padding: 0.25rem 0.5rem;
+  bottom: 0;
+  color: var(--text-color);
+  transform: translate(-50%, -50%);
+}
+.subPlayerCardLineupBody {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.subPlayerCardLineupName {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.subPlayerCardLineupEvent {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: 0.25rem;
+  color: var(--secondary-text-color);
+}
+.subPlayerCardLineupEventItem {
+  width: 12px;
+  aspect-ratio: 1 / 1;
+}
+.subItem {
+  width: 25px;
+  aspect-ratio: 1 / 1;
+}
+@media (max-width: 768px) {
+  .subPlayerCardLineup {
+    gap: 0.25rem;
+
+    padding: 0.25rem 0.15rem;
+  }
+  .subPlayerCardLineupShirt {
+    width: 45px;
+    height: 45px;
+  }
+  .subPlayerCardLineupName {
+    font-size: 0.7rem;
+  }
+  .subItem {
+    width: 15px;
+  }
+}

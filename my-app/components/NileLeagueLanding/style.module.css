@@ -1,0 +1,19 @@
+.landingContainer {
+  height: 45vh;
+  background: #3a3a3a;
+  background: linear-gradient(
+    149deg,
+    rgba(58, 58, 58, 1) 73%,
+    rgba(190, 151, 80, 1) 90%
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 5.5rem;
+}
+.isInLandingPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -1,0 +1,94 @@
+.ClubLandingPage {
+    min-height: 25rem;
+  overflow: hidden;
+  background: var(--club-color-background);
+  color: var(--text-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.ClubLandingBg {
+    background: var(--team-slogan);
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 35.9rem;
+    bottom: -88px;
+    opacity: 0.5;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -2%;
+    -webkit-mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
+    mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
+}
+
+.ClubInfo {
+  z-index: 10;
+  position: relative;
+}
+.ClubLogo {
+  width: 8rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.ClubName {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.ClubDetailsList {
+  display: flex;
+  gap: 0.9rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.ClubDetailsListItem {
+  position: relative;
+}
+.ClubDetailsListItem span{
+    display: inline-block;
+    margin-right: .4rem;
+}
+.ClubDetailsListItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--SecondColor);
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+.ClubLandingPage{
+    min-height: 15rem;
+}
+.ClubLandingBg {
+    height: 23.5rem;
+    bottom: -4.4rem;
+    -webkit-mask-image: none;
+    mask-image: none;
+}
+.ClubLogo{
+    width: 6rem;
+    margin-bottom: .8rem;
+}
+  .ClubName {
+    font-size: 1.8rem;
+  }
+  .ClubDetailsList {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .ClubDetailsListItem {
+    display: none;
+  }
+}

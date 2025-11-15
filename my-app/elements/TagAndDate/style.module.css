@@ -1,0 +1,22 @@
+.videoContentData{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    gap: 0 .8rem;
+    font-size: 0.625em;
+}
+.tag{
+    font-weight: 800;
+    padding: .2rem .4rem ;
+
+    text-align: center;
+
+
+    background-color: var(--SecondColor);
+    text-transform: uppercase;
+}
+.videoPublishedTime{
+    color: var(--foreground);
+    
+}

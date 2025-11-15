@@ -1,0 +1,9 @@
+.teamsSection{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.teamsList {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

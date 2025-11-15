@@ -1,0 +1,26 @@
+.lineUpPage {
+  display: flex;
+
+  margin-top: 3.5rem;
+  gap: 0.7rem;
+}
+.teamLineupContainer {
+  max-width: 100%;
+  flex-basis: 680px;
+}
+.substitutesContainer {
+  flex: 1;
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+@media (max-width: 991px) {
+  .lineUpPage {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .teamLineupContainer {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}

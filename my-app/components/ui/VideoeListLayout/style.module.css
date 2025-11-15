@@ -1,0 +1,25 @@
+.sectionContainer {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    touch-action: pan-y pinch-zoom;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+.itemOnVideos{
+    flex-basis: 33.3333%; 
+    padding-right: 1rem; 
+    opacity: .3; 
+    transition: opacity 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .itemOnVideos{
+        flex-basis: 75vw;
+        padding-right: 15px;
+    }
+}
+

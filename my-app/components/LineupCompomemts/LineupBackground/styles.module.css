@@ -1,0 +1,6 @@
+.lineupBackground {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  margin: 10px 0;
+}
