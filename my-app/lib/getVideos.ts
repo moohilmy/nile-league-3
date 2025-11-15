@@ -11,7 +11,7 @@ export async function getVideos(playlistId: string): Promise<VideoType[]> {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&key=${apiKey}`;
 
     const res = await fetch(url, {
-      cache: "no-store",
+      
       next: { revalidate: 60 },
     });
 
