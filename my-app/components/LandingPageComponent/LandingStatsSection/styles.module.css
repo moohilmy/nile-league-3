@@ -1,0 +1,9 @@
+.carsouselContainer {
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+  scrollbar-width: none;
+}
+.carsouselContainer::-webkit-scrollbar {
+  display: none;
+}

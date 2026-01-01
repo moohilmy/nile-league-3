@@ -1,0 +1,84 @@
+.statsList {
+  display: flex;
+  flex-direction: column;
+  width: 22.5rem;
+  overflow: hidden;
+  border-radius: var(--border-radius-value);
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.topPlayerItem {
+  width: 100%;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  background: var(--club-color-background);
+
+  position: relative;
+}
+.topPlayerInfo {
+  padding: 0.5rem 0;
+}
+.statRecord {
+  font-size: 4rem;
+  line-height: 100%;
+  font-weight: 800;
+}
+.statRank {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.statPlayerName {
+  letter-spacing: -0.02rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.statName {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.statTeamInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.75rem;
+
+  font-weight: 800;
+}
+.playerStatItem {
+  display: flex;
+  padding: 1.2rem 1rem;
+  justify-content: space-between;
+}
+.playerStatItem:not(:last-child) {
+  border-bottom: 1px solid var(--prime-text-color);
+}
+.statPlayerDetailsList {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.statRankList,
+.statRecordList {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.statPlayerNameList {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.playerStatItem {
+  background-color: var(--warm-gray);
+}
+
+@media (max-width: 768px) {
+  .statsList {
+    width: 18.5rem;
+  }
+
+  .statRecord {
+    font-size: 3rem;
+  }
+}

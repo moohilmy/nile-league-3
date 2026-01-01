@@ -6,7 +6,7 @@ const page = () => {
     <section className={`${styles.standingsSection} nile-league-wrapper`}>
       <div className={styles.standingsHeader}>
         <div>
-          <h1 className={styles.standingsHeading}>Nile League</h1>
+          <h1 className={'nile-league-header'}>Nile League</h1>
           <p className={styles.standingsSubHeader}>
             Standings of the Nile League 24/25
           </p>

@@ -33,14 +33,13 @@ export default function SelectorWeek() {
         setApi={setApi}
         opts={{
           align: "start",
-          inViewThreshold: 0.9, // يظهر العنصر بالكامل
+          inViewThreshold: 0.9,
           slidesToScroll: 1,
 
           containScroll: "keepSnaps",
         }}
         className="relative w-full max-w-md overflow-hidden py-4 flex items-center justify-center gap-1.5"
       >
-        {/* أزرار التنقل */}
 
         <CarouselContent>
           {matchweeks.map((week) => (

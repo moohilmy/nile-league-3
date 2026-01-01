@@ -32,35 +32,51 @@ const page = async ({ params }: { params: Promise<{ clubId: string }> }) => {
     <div className={`t${clubId}  nile-league-wrapper page-content-space`}>
       <div className={styles.clubInfo}>
         <div className={styles.clubInfoContent}>
+          <h1 className={styles.summaryTitle}>About of Al Alahly</h1>
+
           <ul className={styles.clubInfoList}>
             <li className={styles.clubInfoItem}>
-              <div>founded:</div>
-              <div>1907</div>
+              <div className={styles.clubInfoTitle}>founded:</div>
+              <div className={styles.clubItemInfo}>1907</div>
             </li>
             <li className={styles.clubInfoItem}>
-              <div>nickname:</div>
-              <div>red devils</div>
+              <div className={styles.clubInfoTitle}>nickname:</div>
+              <div className={styles.clubItemInfo}>red devils</div>
             </li>
             <li className={styles.clubInfoItem}>
-              <div>stadium:</div>
-              <div>cairo stadium</div>
+              <div className={styles.clubInfoTitle}>city:</div>
+              <div className={styles.clubItemInfo}>cairo</div>
             </li>
             <li className={styles.clubInfoItem}>
-              <div>website:</div>
-              <Link href={"https://www.alahlyegypt.com"}>alahly website</Link>
+              <div className={styles.clubInfoTitle}>stadium:</div>
+              <div className={styles.clubItemInfo}>cairo stadium</div>
+            </li>
+            <li className={styles.clubInfoItem}>
+              <div className={styles.clubInfoTitle}>website:</div>
+              <div className={styles.clubItemInfo}>
+                <Link
+                  className={styles.clubLink}
+                  href={"https://www.alahlyegypt.com"}
+                >
+                  alahly website
+                </Link>
+              </div>
             </li>
           </ul>
         </div>
         <div className={styles.clubInfoImg}>
-          <span className={` ${styles.imgHover}`} />
-          <Image
-            src={"/club-about.jpg"}
-            alt=""
-            fill
-            style={{
-              objectFit: "cover",
-            }}
-          />
+          <div>
+            <span className={` ${styles.imgHover}`} />
+            <Image
+              src={"/club-about.jpg"}
+              alt=""
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </div>
       </div>
       <div className={styles.summary}>
@@ -71,6 +87,7 @@ const page = async ({ params }: { params: Promise<{ clubId: string }> }) => {
             src={"/club-about-1.jpg"}
             alt=""
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{
               objectFit: "cover",
             }}
@@ -108,12 +125,13 @@ const page = async ({ params }: { params: Promise<{ clubId: string }> }) => {
                       championship.count > 0 ? styles.clubImgActive : ""
                     }`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <span className={styles.countOfCup}>
                     {championship.count}
                   </span>
                 </div>
-                <div>{championship.name}</div>
+                <div className={styles.championName}>{championship.name}</div>
               </li>
             ))}
           </ul>

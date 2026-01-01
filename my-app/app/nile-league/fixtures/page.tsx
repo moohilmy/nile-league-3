@@ -1,5 +1,4 @@
 import MatchesList from "@/components/fixtureComponents/MatchesList";
-import styles from "./styles.module.css";
 
 export default async function FixturesPage({
   searchParams,
@@ -16,7 +15,7 @@ export default async function FixturesPage({
   return (
     <div>
       <div>
-        <h1 className={styles.matchweekTitle}>Matchweek {week}</h1>
+        <h1 className={"nile-league-heading mb-4"}>Matchweek {week}</h1>
       </div>
       <MatchesList matchesList={[1,1,1,1,2,3,4,5]}/>
     </div>

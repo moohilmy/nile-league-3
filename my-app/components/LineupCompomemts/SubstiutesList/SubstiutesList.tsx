@@ -16,7 +16,7 @@ export default function SubstiutesList({
     <div className={styles.substitutes}>
       <header className={styles.substitutesHeader}>
         <div className={styles.teamSubstitutesLogo}>
-          <Image src={logoURL} alt={`${teamName} Logo`} fill />
+          <Image src={logoURL} alt={`${teamName} Logo`} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
         </div>
         <h2 className={styles.substitutesTitle}>Substitutes</h2>
       </header>

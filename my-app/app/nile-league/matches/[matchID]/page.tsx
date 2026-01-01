@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import { SideStats, StatsBar } from "@/components/StatsComponents";
 import StandingsTable from "@/components/StandingsTable/StandingsTable";
+import Link from "next/link";
 
 export default async function MatcheID({
   params,
@@ -144,11 +145,12 @@ export default async function MatcheID({
       </div>
       <nav className={styles.sideBar}>
         <div className="standings-sideBar">
-          <div className="flex gap-1.5 items-center mb-2">
+          <div className="flex gap-1.5 items-center mb-2 relative">
             <Image src={"/nile.png"} alt="logo" height={50} width={50} />
-            <div className="font-extrabold capitalize text-2xl ">
+            <div className="nile-league-headerLink ">
               Nile league
             </div>
+            <Link href={'/nile-league/standings'} className="nile-league-link"/>
           </div>
           <StandingsTable isInNav={true} />
         </div>

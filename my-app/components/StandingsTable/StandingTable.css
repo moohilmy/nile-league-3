@@ -63,20 +63,30 @@
     display: block;
     font-size: 0.8rem;
   }
-  .statnding-page .hidden-In-small-screen, .statnding-nav .hidden-In-mid-screen {
+  .statnding-page .hidden-In-small-screen,
+  .statnding-nav .hidden-In-mid-screen {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .home-nav .statnding-nav tbody tr:nth-child(n + 6) {
     display: none;
   }
-  .statnding-nav .table-header-next , .statnding-nav .table-body-next{
-    display:  none;
+  .statnding-nav .hide-in-nav {
+    display: none;
+  }
+  .statnding-nav .table-heading-form, .statnding-nav .table-body-form {
+    display: table-cell;
+  }
+}
+@media (max-width: 768px) {
+  .statnding-nav .table-header-next,
+  .statnding-nav .table-body-next {
+    display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .statnding-nav .hide-in-nav {
     display: none;
   }

@@ -3,6 +3,8 @@
   height: 26rem;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  border-radius: var(--border-radius-value);
 }
 .playerCard {
   position: relative;

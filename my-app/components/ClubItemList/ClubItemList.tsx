@@ -4,7 +4,7 @@ import { ClubsType } from "@/types";
 import Link from "next/link";
 
 const ClubItemList = ({ club }: { club: ClubsType }) => {
-    const {id , image, name, sloganName} = club
+  const { id, image, name, sloganName } = club;
   return (
     <div className={`${styles.clubItemCard}`}>
       <Link
@@ -19,7 +19,7 @@ const ClubItemList = ({ club }: { club: ClubsType }) => {
               src={image}
               alt={name}
               fill
-              sizes="100wv"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className=" z-10"
             />
           </div>

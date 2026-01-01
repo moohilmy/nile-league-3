@@ -7,6 +7,8 @@ export default function Shirt() {
       viewBox="-1 0 19 19"
       xmlns="http://www.w3.org/2000/svg"
       className="cf-icon-svg"
+      width={'100%'}
+      height={'100%'}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

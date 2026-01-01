@@ -1,0 +1,94 @@
+.AllStars {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.playerStatsSection {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 3 * 0.5rem) / 4);
+  background: var(--warm-gray);
+
+  overflow: hidden;
+  border-radius: var(--border-radius-value);
+}
+.playerStatsInfo {
+  position: relative;
+  background: var(--club-color-background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.playerStatsImg {
+  padding: 0 1.3rem;
+}
+.playerNameSection {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  background: var(--club-color-background);
+  color: var(--text-color);
+
+  margin-top: -2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+.playerStatsContent {
+  padding: 1rem 0;
+
+  width: 100%;
+  flex: 1;
+}
+.playerTitle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.playerStatsInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.playrerStatsInfoItem {
+  padding: 0.25rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.playrerStatsInfoItem:not(:last-child) {
+  border-bottom: 1px solid var(--prime-text-color);
+}
+.statsName {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.statsNumber {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+@media (max-width: 1100px) {
+  .playerStatsSection {
+    flex-basis: calc((100% - 2 * 0.5rem) / 3);
+  }
+}
+@media (max-width: 765px) {
+  .playerStatsSection {
+    flex-basis: calc((100% - 1 * 0.5rem) / 2);
+  }
+}
+@media (max-width: 680px) {
+  .playerStatsSection {
+    flex-basis: 100%;
+  }
+}

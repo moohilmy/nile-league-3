@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-
+import { Analytics } from "@vercel/analytics/next"
 
 import { Alexandria  } from "next/font/google";
 const alexandria = Alexandria({
@@ -28,6 +28,7 @@ export default function RootLayout({
         className={`${alexandria.className} antialiased`}
       >
         <Header/>
+        <Analytics />
         {children}
         <Footer/>
       </body>

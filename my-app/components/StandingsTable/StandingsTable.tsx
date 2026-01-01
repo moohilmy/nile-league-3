@@ -73,8 +73,9 @@ export default function StandingsTable({
                   <Image
                     src="/team-logo/alahly.svg"
                     alt="team logo"
-                    width={20}
-                    height={20}
+                    height={24}
+                    width={24}
+                    className=" size-6"
                   />
                   <span className={"team-long-name"}>Al Ahly</span>
                   <span className={"team-short-name"}>aly</span>
@@ -108,7 +109,7 @@ export default function StandingsTable({
               <td className={`table-body-pts`}>
                 <span>8</span>
               </td>
-              <td className={`hidden-In-mid-screen `}>
+              <td className={`hidden-In-mid-screen table-body-form `}>
                 <ul className={`${styles.standingsFormList} `}>
                   <li className={`${styles.standingsFormItem} win`}>w</li>
                   <li className={`${styles.standingsFormItem} draw`}>d</li>
@@ -117,12 +118,15 @@ export default function StandingsTable({
                   <li className={`${styles.standingsFormItem} win`}>w</li>
                 </ul>
               </td>
-              <td className={`hidden-In-small-screen hide-in-nav table-body-next`}>
+              <td
+                className={`hidden-In-small-screen hide-in-nav table-body-next`}
+              >
                 <div className="table-body-next">
                   <Image
                     src={"/team-logo/zamalek.svg"}
-                    height={20}
-                    width={20}
+                    height={24}
+                    width={24}
+                    className=" size-6"
                     alt="next-team for alahly"
                   />
                 </div>

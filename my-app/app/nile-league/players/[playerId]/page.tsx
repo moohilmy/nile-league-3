@@ -36,7 +36,7 @@ const page = async ({ params }: { params: Promise<{ playerId: string }> }) => {
             <div className={styles.playerLastName}>{fullname[1]}</div>
           </div>
           <div className={styles.playerTeamLogo}>
-            <Image src={club.teamLogo} alt={club.teamName} fill />
+            <Image src={club.teamLogo} alt={club.teamName} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </div>
         </div>
         <div className={styles.playerInfo}>

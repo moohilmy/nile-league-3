@@ -1,0 +1,50 @@
+.managerSection {
+  border-radius: var(--border-radius-value);
+  background-color: var(--SecondColor);
+  overflow: hidden;
+}
+.managerHeader {
+  background: var(--light-purple);
+  padding: 1.2rem 0.6rem;
+  color: var(--warm-gray);
+}
+.managerContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.managerInfoList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-transform: capitalize;
+}
+.infoItem {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+}
+.infoItem:nth-child(even){
+    background: var(--light-purple);
+    color: var(--warm-gray);
+}
+.infoHeader{
+    font-weight: 800;
+}
+.managerImg {
+  background: var(--light-purple);
+  height: 100%;
+  display: flex;
+  padding: 0 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px){
+    .managerHeader{
+        display: flex;
+        justify-content:  center;
+    }
+    .managerContent{
+        flex-direction: column-reverse;
+    }
+}

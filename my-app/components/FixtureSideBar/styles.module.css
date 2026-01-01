@@ -1,0 +1,110 @@
+.fixtureSideBar {
+  border: 1px solid var(--warm-gray);
+  border-radius: var(--border-radius-value);
+  padding: 1.8rem 0.6rem;
+}
+.fixtureTitle {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+.fixtureList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.fixtureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+}
+.fixtureItem:not(:last-child) {
+  border-bottom: 1px solid var(--warm-gray);
+}
+.fixtureDate {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--prime-text-color);
+
+  font-weight: 500;
+}
+.fixtureContent {
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+  display: flex;
+  width: 100%;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.vsBox {
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--border-radius-value);
+  background: var(--SecondColor);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.fixtureTeamBox {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.fixtureHomeTeamBox {
+  flex-direction: row-reverse;
+}
+.fixtureAwayTeamBox {
+  flex-direction: row;
+}
+.fixtureTeamImg {
+  position: relative;
+  width: 2.75rem;
+  height: 2.5rem;
+}
+.fixtureTeamName {
+  font-size: 1rem;
+
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.fixtureBtn{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.fixtureLinkBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1175px) {
+  @container (max-width: 1175px) {
+    .fixtureList {
+      flex-direction: row;
+    }
+    .fixtureItem:not(:last-child) {
+      border-bottom: none;
+    }
+    .fixtureList {
+      gap: 1.25rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .fixtureList::-webkit-scrollbar {
+      display: none; 
+    }
+    .fixtureLinkBtn{
+      width: 40%;
+    }
+  }
+  @container (max-width : 480px) {
+    .fixtureLinkBtn{
+      width: 100%;
+    }
+  }
+}

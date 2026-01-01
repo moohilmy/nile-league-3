@@ -4,8 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
 
   experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react'],
+    optimizePackageImports: ['lucide-react', 'swiper'],
     
   },
   

@@ -48,7 +48,7 @@ const PlayersList: PlayerType[] = [
     },
     image: "/nile-player-card.png",
     kitNumber: 24,
-    stats: [{ Appearances: 18, goals: 3, assists: 5 }],
+    stats: [{ Appearances: 18, goals: 3, assists: 8 }],
   },
   
   {

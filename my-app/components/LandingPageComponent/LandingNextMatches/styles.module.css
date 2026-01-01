@@ -1,0 +1,139 @@
+.matchCardContainer {
+  width: calc((100% - 0.75rem * 3) / 4);
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+.matchCardContainer:hover{
+  transform: translateY(-.8rem);
+}
+.matchCard {
+  width: 100%;
+  border-radius: var(--border-radius-value);
+  overflow: hidden;
+
+  border: 1px solid var(--warm-gray);
+}
+.matchCardHeader {
+  background-color: var(--SecondColor);
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  border-bottom: 2px solid var(--warm-gray);
+  padding: 1rem 2rem;
+}
+.matchCardContent {
+  position: relative;
+  overflow: hidden;
+  background: var(--light-purple);
+  display: flex;
+  align-items: center;
+  height: 17rem;
+  width: 100%;
+}
+
+.awayMatchCard,
+.homeMatchCard {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 1.2rem;
+  position: relative;
+}
+.awayMatchCard {
+  right: -0.5rem;
+}
+.homeMatchCard {
+  left: -0.5rem;
+}
+.homeMatchCard .teamImg {
+  left: -25%;
+}
+.awayMatchCard .teamImg {
+  right: -25%;
+}
+.teamNameMatchCard {
+  font-weight: 800;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  background: var(--club-color-background);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+}
+.teamImg {
+  width: 9rem;
+  height: 12rem;
+
+  position: absolute;
+}
+.matchCardDate {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 0.5rem 0;
+  color: var(--SecondColor);
+}
+.vsIcon {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 16px;
+  background: var(--warm-gray);
+  height: 5.2rem;
+  width: 5.2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  justify-content: center;
+  mask-image: url("/hexagon-icon.svg");
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.matchCardFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 1175px) {
+  .matchCardContainer {
+    width: calc((100% - 0.75rem * 2) / 3);
+  }
+}
+@media (max-width: 991) {
+  .teamImg {
+    width: 7rem;
+    height: 10rem;
+  }
+  .teamNameMatchCard {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .matchCardContainer {
+    width: calc((100% - 0.75rem * 1) / 2);
+  }
+}
+@media (max-width: 500px) {
+  .matchCardContainer {
+    width: 100%;
+  }
+    .teamNameMatchCard {
+    font-size: 1.4rem;
+  }
+    .teamImg {
+    width: 9rem;
+    height: 12rem;
+  }
+}

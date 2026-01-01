@@ -1,0 +1,53 @@
+.landingContentSection {
+  max-width: 90rem;
+  width: 100%;
+}
+.landingContentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+.landingContentListItem {
+  position: relative;
+}
+.landingContentListItem:first-child {
+  width: 100%;
+}
+.landingContentListItem {
+  width: calc((100% - 1rem) / 2);
+}
+.landingContentImage {
+  border-radius: var(--border-radius-value);
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  aspect-ratio: 16/6;
+  transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .landingContentListItem:not(:first-child) {
+    width: 100%;
+  }
+  .landingContentListItem:not(:first-child) .ContentListItem {
+    display: flex;
+    flex-direction: row;
+  }
+  .landingContentListItem:not(:first-child) .landingContentImage {
+    width: 12rem;
+  }
+  .landingContentListItem:not(:first-child) .landingContentMedia {
+    margin-left: 0.8rem;
+    flex: 1;
+  }
+  .landingContentListItem:not(:first-child) .landingContentTitle {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+@media (max-width: 460px) {
+  .landingContentListItem:not(:first-child) .landingContentImage {
+    width: 8rem;
+  }
+}

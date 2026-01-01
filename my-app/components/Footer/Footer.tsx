@@ -11,7 +11,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={` ${styles.footerWrapper}`}>
           <Link href={"/"} className={styles.footericon}>
-            <Image alt="epl" src={footerIcone} sizes="100wv" />
+            <Image alt="epl" src={footerIcone}  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
           </Link>
           <div className={styles.footerContent}>
             <div className={styles.footerinfo}>

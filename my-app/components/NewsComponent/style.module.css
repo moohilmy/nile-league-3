@@ -1,20 +1,12 @@
-.container{
-    display: flex;
-    flex-direction: column;
-}
-
-
 .imgContainer{
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/7;
     overflow: hidden;
     position: relative;
     border-radius: 12px;
 }
-
 .newsContent{
   display: flex;
-
   flex-direction: column;
   flex: 1 0 0;
   flex-basis: auto;
@@ -50,10 +42,10 @@
     }
     .newsArticle:not(:nth-child(3n + 1)) .newsContent {
       flex: 1;
+      padding: 0;
     }
     .newsArticle:not(:nth-child(3n + 1)) .imgContainer {
       width: 9rem;
-      aspect-ratio: 1/1;
       flex-shrink: 0;
     }
   }

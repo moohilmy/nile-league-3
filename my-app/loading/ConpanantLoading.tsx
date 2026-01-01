@@ -1,6 +1,6 @@
 'use client'
 import React, { useCallback, useState } from "react";
-import imgLoading from "@/public/loadingImg.png";
+import imgLoading from "@/public/loading.png";
 import styles from './style.module.css'
 import Image from "next/image";
 const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`;

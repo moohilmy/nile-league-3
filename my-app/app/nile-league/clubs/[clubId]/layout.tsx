@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import styles from "./style.module.css";
 import ClubNav from "@/components/ClubNav/ClubNav";
@@ -13,37 +13,39 @@ const layout = async ({
   params: Promise<{ clubId: string }>;
 }>) => {
   const { clubId } = await params;
-  const club = clubsList.find(e => e.id === Number(clubId))
-  if (club === undefined){
-    return notFound()
+  const club = clubsList.find((e) => e.id === Number(clubId));
+  if (club === undefined) {
+    return notFound();
   }
-  const  {name, image} = club
+  const { name, image } = club;
   return (
     <section>
       <div className={`${styles.ClubLandingPage} t${clubId}`}>
-        <div className={styles.ClubLandingBg} />
-        <div className={`${styles.ClubInfo} nile-league-wrapper`}>
-          <div className={styles.ClubLogo}>
-            <Image src={image} fill alt={name} />
+        <Suspense fallback={<>loading</>}>
+          <div className={styles.ClubLandingBg} />
+          <div className={`${styles.ClubInfo} nile-league-wrapper`}>
+            <div className={styles.ClubLogo}>
+              <Image src={image} fill alt={name}  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <div>
+              <h1 className={styles.ClubName}>{name}</h1>
+              <ul className={styles.ClubDetailsList}>
+                <li className={styles.ClubDetailsListItem}>
+                  <span>es:</span>1907
+                </li>
+                <li className={styles.ClubDetailsListItem}>
+                  <span>stadium:</span>cairo Stadium, cairo
+                </li>
+                <li className={styles.ClubDetailsListItem}>
+                  <span>capacity:</span>75,000
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h1 className={styles.ClubName}>{name}</h1>
-            <ul className={styles.ClubDetailsList}>
-              <li className={styles.ClubDetailsListItem}>
-                <span>es:</span>1907
-              </li>
-              <li className={styles.ClubDetailsListItem}>
-                <span>stadium:</span>cairo Stadium, cairo
-              </li>
-              <li className={styles.ClubDetailsListItem}>
-                <span>capacity:</span>75,000
-              </li>
-            </ul>
+          <div className="nile-league-wrapper">
+            <ClubNav />
           </div>
-        </div>
-        <div className="nile-league-wrapper">
-          <ClubNav />
-        </div>
+        </Suspense>
       </div>
       {children}
     </section>

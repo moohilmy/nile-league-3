@@ -10,15 +10,13 @@ const NewsComponent = ({ post }: { post: INews }) => {
   const { id, img, title, date } = post;
   return (
     <article className={`${styles.newsArticle}`}>
-      <Link className={styles.container} href={`/nile-league/news/${id}`}>
+      <Link className={`${styles.container} nile-league-article`} href={`/nile-league/news/${id}`}>
         <div
           className={`${styles.imgContainer}`}
         >
           <div className="img-header">
           <div className={`imgBackground`}></div>
-          <Image src={`/news/${img}`} alt={title} fill={true} sizes="75wv"  placeholder={PLACEHOLDER_SRC} loading="lazy" style={{
-            objectFit: 'cover',
-          }} />
+          <Image src={`/News/${img}`} alt={title} fill={true}  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  placeholder={PLACEHOLDER_SRC} loading="lazy" className="nile-league-mediaImage" />
           </div>
         </div>
         <div className={styles.newsContent}>

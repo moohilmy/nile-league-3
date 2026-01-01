@@ -1,5 +1,5 @@
 .ClubLandingPage {
-    min-height: 25rem;
+  min-height: 25rem;
   overflow: hidden;
   background: var(--club-color-background);
   color: var(--text-color);
@@ -11,19 +11,19 @@
 }
 
 .ClubLandingBg {
-    background: var(--team-slogan);
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 35.9rem;
-    bottom: -88px;
-    opacity: 0.5;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: -2%;
-    -webkit-mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
-    mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
+  background: var(--team-slogan);
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 35.9rem;
+  bottom: -88px;
+  opacity: 0.5;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -2%;
+  -webkit-mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
+  mask-image: radial-gradient(90% 80% at 48% 68%, #000 0, #0000 70%);
 }
 
 .ClubInfo {
@@ -51,9 +51,9 @@
 .ClubDetailsListItem {
   position: relative;
 }
-.ClubDetailsListItem span{
-    display: inline-block;
-    margin-right: .4rem;
+.ClubDetailsListItem span {
+  display: inline-block;
+  margin-right: 0.4rem;
 }
 .ClubDetailsListItem:not(:last-child)::after {
   content: "";
@@ -66,29 +66,79 @@
   height: 0.4rem;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
-.ClubLandingPage{
-    min-height: 15rem;
+
+/* page */
+.status {
+  display: flex;
+  gap: 0.8rem;
 }
-.ClubLandingBg {
+.topSection {
+  flex: 2;
+  display: flex;
+  gap: 0.8rem;
+
+  flex-direction: column;
+}
+.topSectionNav {
+  flex: 1;
+  overflow: hidden;
+  max-width: 100%;
+  container-type: inline-size;
+}
+.leagueSection {
+  display: flex;
+  padding: 1.8rem 0.5rem;
+  border-radius: var(--border-radius-value);
+  border: 1px solid var(--warm-gray);
+  flex: 1;
+}
+.topStatusForClub {
+  display: flex;
+  gap: 0.8rem;
+}
+
+@media (max-width: 1175px) {
+  .status {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .ClubLandingPage {
+    min-height: 15rem;
+  }
+  .ClubLandingBg {
     height: 23.5rem;
     bottom: -4.4rem;
     -webkit-mask-image: none;
     mask-image: none;
-}
-.ClubLogo{
+  }
+  .ClubLogo {
     width: 6rem;
-    margin-bottom: .8rem;
-}
+    margin-bottom: 0.8rem;
+  }
   .ClubName {
     font-size: 1.8rem;
   }
   .ClubDetailsList {
     display: none;
   }
+
+  .topStatusForClub {
+    flex-direction: column;
+  }
+  .teamFormScoreBoard {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
 }
+
 @media (max-width: 640px) {
   .ClubDetailsListItem {
     display: none;
+  }
+  .teamFormImg {
+    width: 3rem;
+    height: 3rem;
   }
 }

@@ -18,8 +18,8 @@
   align-items: center;
 }
 .standingsFormItem {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   color: var(--background);
   align-items: center;
@@ -27,7 +27,6 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: 0.5rem;
-  line-height: 1rem;
   border-radius: 50%;
 }
 .standingsTableBody {
@@ -55,7 +54,11 @@
   padding: 1rem 0.2rem;
   position: relative;
 }
-
+@media (max-width: 768px) {
+  .standingsTeamInfo{
+    gap: 0.5rem;
+  }
+}
 @media (max-width: 465px) {
   .standingsTableBody {
     font-size: 0.7rem;

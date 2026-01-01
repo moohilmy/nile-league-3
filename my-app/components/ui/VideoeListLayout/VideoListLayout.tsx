@@ -62,7 +62,7 @@ const VideoListLayout: React.FC<VideoListLayoutProps> = ({
       <div className="w-full relative">
         <div className={styles.sectionContainer}>
           <header>
-            <h2 className="nile-league-header">{titleOfSection}</h2>
+            <h2 className="nile-league-header mb-6">{titleOfSection}</h2>
           </header>
 
           <Carousel

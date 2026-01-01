@@ -19,7 +19,7 @@ const VideoComponent = ({
   return (
     <article className={"w-full h-full flex"}>
       <Link href={`/nile-league/videos/${id}`} aria-label={title}>
-        <div className="flex w-full h-full flex-col">
+        <div className="nile-league-article">
           <header className={styles.videoHeader}>
             <div className="img-header">
               <div className={`imgBackground`}></div>
@@ -32,8 +32,12 @@ const VideoComponent = ({
             </div>
           </header>
           <div className={styles.videoContent}>
-            <h3 className='mediaContentHeading'>{title}</h3>
-            <TagAndDate tag="video" publishedDate={publishedAt} inList={isInList} />
+            <h3 className="mediaContentHeading">{title}</h3>
+            <TagAndDate
+              tag="video"
+              publishedDate={publishedAt}
+              inList={isInList}
+            />
           </div>
         </div>
       </Link>

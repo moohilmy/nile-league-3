@@ -6,7 +6,7 @@ export default function StatsClubsLayout() {
   return (
     <section className={`nile-league-wrapper`}>
       <header>
-        <h1 className={styles.statsLayoutHeader}>Nile league Club Stats</h1>
+        <h1 className={'nile-league-header mb-6'}>Nile league Club Stats</h1>
       </header>
       <div className={`${styles.statsLayoutContent}`}>
         {statsNames.map((name, index) => (

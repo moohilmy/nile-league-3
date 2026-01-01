@@ -39,6 +39,7 @@ const Header = () => {
           <Link
             href="/"
             className="w-20 flex-shrink-0 relative"
+            
             onClick={() => setIsMenuOpen(false)}
           >
             <Image

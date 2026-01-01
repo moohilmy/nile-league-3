@@ -11,7 +11,7 @@ const Sponsores = () => {
         <ul className={styles.sponsoresList}>
           <li>
             <Link href="https://nile-developments.com/en/">
-              <Image src={Hero} alt="Nile" sizes="35vw" />
+              <Image src={Hero} alt="Nile"  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </Link>
           </li>
         </ul>

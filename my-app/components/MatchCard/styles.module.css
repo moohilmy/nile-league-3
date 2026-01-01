@@ -1,0 +1,70 @@
+.matchCardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.matchCardFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+.matchCardDate {
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+  color: var(--prime-text-color);
+}
+
+.matchCardScoreBoard {
+  display: flex;
+  gap: 0.8rem;
+}
+.vsContainer{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.scoreBoard {
+  padding: 0.4rem 0.6rem;
+  width: 2.8rem;
+  height: 3.8rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--warm-gray);
+  border-radius: var(--border-radius-value);
+}
+.matchCardClub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.matchCardClubImg {
+  width: 5rem;
+  position: relative;
+  height: 4.1rem;
+}
+.matchCardClubName {
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .matchCardClubImg{
+    width: 3.8rem;
+    height: 3rem;
+  }
+  .scoreBoard{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .matchCardClubName{
+    font-size: .8rem;
+  }
+}
+

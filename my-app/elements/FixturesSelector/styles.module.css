@@ -11,7 +11,7 @@
   position: relative;
   padding: .5rem .75rem;
   border: 3px solid var(--warm-gray);
-  border-radius: 10px;
+  border-radius: var(--border-radius-value);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   text-transform: capitalize;

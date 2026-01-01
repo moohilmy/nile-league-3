@@ -1,0 +1,50 @@
+.generalStatsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.generalStatsItem {
+  display: flex;
+  background: var(--SecondColor);
+
+  border-bottom: 1px solid var(--BorderColor);
+  flex-wrap: wrap;
+
+  color: var(--TextPrimaryColor);
+}
+.statsBox {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0.8rem;
+}
+.totalGoals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--warm-gray);
+}
+.statsTitle {
+  margin-right: 0.4rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.statsValue{
+  font-size: 1.25rem;
+}
+.generalStatsItem .statsBox:not(:last-child) {
+  border-right: 1px solid var(--warm-gray);
+}
+
+@media (max-width: 768px) {
+  .statsTitle{
+    font-size: 0.75rem;
+  }
+  .statsValue{
+    font-size: 1rem;
+  }
+  .statsBox {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
