@@ -107,6 +107,7 @@
 }
 .landing-page-content {
   flex-direction: column;
+  position: relative;
   display: flex;
   gap: 2.4rem;
   width: calc(100% - (20rem + 0.8rem));
@@ -186,6 +187,11 @@ body {
   transition: all 0.2s ease;
   object-fit: cover;
 }
+.img-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .img-header:hover .nile-league-mediaImage {
   transform: scale(1.05);
 }
@@ -232,7 +238,6 @@ body {
     opacity: 65%;
   }
 }
-
 .win {
   background-color: var(--green-color);
 }
@@ -251,6 +256,21 @@ body {
   position: relative;
   margin-top: -3rem;
   border-radius: 0.6rem;
+}
+
+.sticky-cards {
+  height: 100svh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hestory-section-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 2rem 0;
+  text-transform: uppercase;
 }
 .t1 {
   /* الأهلي - Al Ahly */
@@ -393,6 +413,30 @@ body {
   --club-color-background: linear-gradient(100.38deg, #bd0f0f, #c4170b);
   --club-primary-color: #af1106;
   --team-slogan: url(/slogans/talaea-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t19{
+  /* المقاولون العرب - Arab al mokawloon */
+  --club-color-background: linear-gradient(100.38deg,#f6dc0c 0%, #000d56 74%);
+  --club-primary-color: #f6dc0c;
+  --team-slogan: url(/slogans/mokawloon-slogan.svg);
+  --text-color: #ffffff; /* Text color for contrast */
+}
+
+.t20{
+  /* الترسانه - al tarsana */
+  --club-color-background: linear-gradient(100.38deg,#2f2a8d 0%, #dfdfdf 100%);
+  --club-primary-color: #2f2a8d;
+  --team-slogan: url(/slogans/al-tarsana-slogan.svg);
+  --text-color: #000000; /* Text color for contrast */
+}
+
+.t21,.t22{
+  /* نادي الأوليمبي - olympic club */
+  --club-color-background: linear-gradient(100.38deg,#d72229 0%, #dfdfdf 100%);
+  --club-primary-color: #d72229;
+  --team-slogan: url(/slogans/olympic-slogan.svg);
   --text-color: #ffffff; /* Text color for contrast */
 }
 

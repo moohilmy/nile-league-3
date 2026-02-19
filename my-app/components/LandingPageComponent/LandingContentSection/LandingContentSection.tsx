@@ -3,7 +3,15 @@ import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
-const LandingContentSection = ({header,mediaList,tagName}: {header: string, mediaList: number[], tagName: string}) => {
+const LandingContentSection = ({
+  header,
+  mediaList,
+  tagName,
+}: {
+  header: string;
+  mediaList: number[];
+  tagName: string;
+}) => {
   return (
     <section>
       <header className="mb-3">
@@ -13,13 +21,17 @@ const LandingContentSection = ({header,mediaList,tagName}: {header: string, medi
         <ul className={styles.landingContentList}>
           {mediaList.map((_, index) => (
             <li key={index} className={styles.landingContentListItem}>
-              <Link href={"/nile-league/news/1"} className={"nile-league-link"} />
+              <Link
+                href={"/nile-league/news/1"}
+                className={"nile-league-link"}
+              />
               <div className={`${styles.ContentListItem} nile-league-article`}>
                 <div className={`${styles.landingContentImage} img-header`}>
                   <Image
                     alt="description"
                     src="/News/news1.png"
                     fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
                     className={"nile-league-mediaImage"}
                   />
                   <span className={"imgBackground"} />

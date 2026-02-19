@@ -1,0 +1,60 @@
+.historyRecordBox {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+
+.historyRecordBoxBG {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.historyRecordBoxContent {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+}
+.barPercent {
+  background: var(--club-color-background);
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.historyRecordBoxContentText{
+  font-size: .8rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+  z-index: 2;
+}
+.teamSlogan{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: var(--team-slogan);
+  filter: opacity(.4);
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.historyRecordBoxBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.historyRecordBoxName{
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 0.8rem;
+  text-transform: capitalize;
+}

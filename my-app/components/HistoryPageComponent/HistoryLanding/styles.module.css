@@ -1,0 +1,77 @@
+.historyLanding {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.historyImg {
+  object-fit: cover;
+}
+.historyLanding::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #68289e4f;
+  pointer-events: none;
+}
+.historyLandingContent {
+  position: absolute;
+  padding: 0.8rem;
+  z-index: 4;
+  top: 65%;
+  left: 0;
+}
+.historyLandingMasterText,
+.historyLandingSubMasterText {
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  background: #0000008f;
+  line-height: 1;
+}
+.historyLandingMasterText {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.historyLandingSpanText {
+  color: var(--SecondColor);
+}
+.historyLandingSubMasterText {
+  color: var(--soft-ivory);
+  font-weight: 600;
+
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+@media (width < 768px) {
+  .historyLanding {
+    height: 320px;
+  }
+  .historyLandingContent {
+    padding: 0.5rem;
+  }
+  .historyLandingMasterText,
+  .historyLandingSubMasterText {
+    padding: 0.2rem 0.5rem;
+  }
+  .historyLandingMasterText {
+    font-size: 1rem;
+  }
+
+  .historyLandingSubMasterText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (width < 480px) {
+  .historyLandingMasterText {
+    font-size: 0.8rem;
+  }
+  .historyLandingSubMasterText {
+    font-size: 0.7rem;
+  }
+}

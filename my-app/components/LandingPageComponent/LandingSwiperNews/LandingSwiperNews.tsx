@@ -31,7 +31,7 @@ export default function LandingSwiperNews() {
                 src={`/News/news${index + 1}.${s}`}
                 fill
                 loading="lazy"
-                fetchPriority="high"
+                sizes="(max-width: 768px) 50vw, 33vw"
                 alt="news"
                 style={{
                   objectFit: "cover",

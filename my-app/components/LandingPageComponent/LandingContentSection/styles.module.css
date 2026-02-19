@@ -33,6 +33,7 @@
   .landingContentListItem:not(:first-child) .ContentListItem {
     display: flex;
     flex-direction: row;
+    height: 100%;
   }
   .landingContentListItem:not(:first-child) .landingContentImage {
     width: 12rem;

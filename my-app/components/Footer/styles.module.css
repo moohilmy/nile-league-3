@@ -55,18 +55,24 @@
 .footerLinksContainer{
     display: flex;
     gap: 2rem;
-
     flex-wrap: wrap;
 }
-.footerLinks{
-    display: flex;
-    gap: .5rem;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 1;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.footerLinks {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-template-rows: repeat(4, auto); 
+  gap: .5rem 1.5rem; 
+}
+.footerLinkItem{
+    transition: all .3s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: .24px;
+}
+.footerLinkItem:hover{
+    color: var(--light-purple);
 }
 .copyRightContent{
     display: flex;
@@ -86,6 +92,24 @@
 
 
 }
+.socialMediaIcons{
+    display: flex;
+    gap: .5rem;
+}
+.socialMediaIcon{
+    width: 1.8rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    position: relative;
+    color: var(--SecondColor);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.socialMediaIcon:hover{
+    color: var(--light-purple);
+}
 @media (max-width: 768px){
     .footerContent{
         flex-direction: column;
@@ -99,5 +123,8 @@
     }
     .copyRightTextContainer{
         font-size: .8rem;
+    }
+    .socialMediaIcon{
+        width: 1.4rem;
     }
 }

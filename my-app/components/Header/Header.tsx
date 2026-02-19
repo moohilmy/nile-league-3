@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +20,7 @@ const links: { name: string; path: string }[] = [
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isMobile = useIsMobile();
+  const headerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
@@ -31,26 +32,25 @@ const Header = () => {
     <>
       <TeamSection />
       <header
-        className={`${styles.header} ${
-          isMenuOpen ? styles.menuOpened : ""
-        }`}
+        className={`${styles.header} ${isMenuOpen ? styles.menuOpened : ""} header-Animation`}
+        ref={headerRef}
       >
         <div className={styles.headerContent}>
-          <Link
-            href="/"
-            className="w-20 flex-shrink-0 relative"
-            
-            onClick={() => setIsMenuOpen(false)}
-          >
+          <div className="w-20 flex-shrink-0 relative">
+            <Link
+              className="nile-league-link"
+              href={"/"}
+              onClick={() => setIsMenuOpen(false)}
+            />
             <Image
               src={HeaderIcon}
               alt="nile-league-logo"
               priority
               className=" relative"
             />
-          </Link>
+          </div>
 
-          <div className={`${styles.headerContainer} `}>
+          <div className={`${styles.headerContainer}`}>
             <nav className={styles.headerNav}>
               <ul className={styles.headerNavList}>
                 {links.map(({ name, path }, index) => (

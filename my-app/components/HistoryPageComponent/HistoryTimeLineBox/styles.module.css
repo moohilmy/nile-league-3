@@ -1,0 +1,97 @@
+.historyTimeLineBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+.cardContainer {
+  position: relative;
+  will-change: transform;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+}
+.historyImgBackground {
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 106px 33px rgba(57, 57, 57, 0.53) inset;
+  height: 100%;
+  background-color: #d6a34a52;
+  display: flex;
+
+  z-index: 4;
+  position: absolute;
+}
+
+.historyTimeLineImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.historyTimeLineTextArea {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 5;
+
+  background: #d6a24a;
+  background: linear-gradient(
+    90deg,
+    rgba(214, 162, 74, 1) 0%,
+    rgba(225, 184, 106, 0.43) 85%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.historyTimeLineSpot {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--SecondColor);
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .historyTimeLineBox {
+    padding: 1rem;
+
+  }
+  .historyTimeLineText {
+    font-size: 0.8rem;
+  }
+  .historyTimeLineSpot {
+    margin-bottom: 1.2rem;
+  }
+  .historyTimeLineImage {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 300px;
+  }
+  .historyTimeLineTextArea {
+    width: 100%;
+    position: relative;
+    background: transparent;
+    z-index: 0;
+    padding: 0;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column-reverse;
+        background: #f2a65a;
+    background: linear-gradient(
+      90deg,
+      rgba(242, 166, 90, 1) 0%,
+      rgba(224, 122, 46, 1) 100%
+    );
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}

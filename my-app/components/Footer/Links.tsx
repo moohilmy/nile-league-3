@@ -1,19 +1,22 @@
 import Link from "next/link";
 import React from "react";
-
+import styles from "./styles.module.css";
 const Links = ({
-  url,
-  linkname,
+  arrLinks,
 }: {
-  url: string;
-  linkname: string;
+  arrLinks: { name: string; path: string }[];
 }) => {
   return (
-    <li>
-      <Link href={url} className="block hover:opacity-80 transition-all">
-        {linkname}
-      </Link>
-    </li>
+    <ul className={styles.footerLinks}>
+      {arrLinks.map((link, index) => (
+        <li
+          className={`${styles.footerLinkItem}`}
+          key={index}
+        >
+          <Link href={link.path}>{link.name}</Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 

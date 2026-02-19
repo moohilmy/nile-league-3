@@ -1,11 +1,28 @@
-import React from 'react'
+import {
+  HistoryClasicoSection,
+  HistoryRecord,
+  HistoryTimeLine,
+  HistroyLanding,
+} from "@/components/HistoryPageComponent";
 
+import data from ".";
+import HistroyLayout from "@/hooks/HistroyLayout";
 const page = () => {
   return (
-    <div className='h-screen flex justify-center items-center'>
-      <div>We are working on buildingE</div>
-    </div>
-  )
-}
+    <HistroyLayout >
+      <HistroyLanding />
+      <div
+        className=""
+        style={{
+          padding: "0",
+        }}
+      >
+        <HistoryTimeLine data={data} />
+        <HistoryClasicoSection />
+        <HistoryRecord />
+      </div>
+    </HistroyLayout>
+  );
+};
 
-export default page
+export default page;

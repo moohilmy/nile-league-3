@@ -19,9 +19,9 @@ export default function LandingNextMatches() {
       <Carousel
         opts={{
           align: "start",
-          inViewThreshold: 0.4,
+          inViewThreshold: 0.8,
           slidesToScroll: 1,
-          containScroll: "trimSnaps",
+          containScroll: 'keepSnaps',
           
         }}
         

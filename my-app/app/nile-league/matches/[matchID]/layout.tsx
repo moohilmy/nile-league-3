@@ -42,7 +42,7 @@ export default function layout({
           <MatchNav />
         </div>
       </div>
-      <div className={''}>{children}</div>
+      <div className={""}>{children}</div>
     </section>
   );
 }
