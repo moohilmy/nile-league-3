@@ -21,29 +21,27 @@ export default function HistoryTimeLine({
       if (!el) return;
       const cards = el.querySelectorAll(".card");
       const cardsImg = el.querySelectorAll(".card img");
-      const cardsText = el.querySelectorAll(".card .card-text-box");
       const cardslength = cards.length;
 
       gsap.set(cards[0], { y: "0%" });
       gsap.set(cardsImg[0], { opacity: 1 });
-      gsap.set(cardsText[0], {  opacity: 1 });
+
 
       for (let i = 1; i < cardslength; i++) {
         gsap.set(cards[i], { y: "100%" });
-        gsap.set(cardsText[i], {  opacity: 0 });
       }
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: el,
           start: "top top",
-          end: `+=${window.innerHeight * cardslength}`,
+          end: `+=${cardslength * 100}%`, 
           pin: true,
-          scrub: 0.6,
+          scrub: 0.1,
         },
       });
       for (let i = 0; i < cardslength - 1; i++) {
         const currentCard = cards[i];
-        const nextText = cardsText[i + 1];
+
         const nextCard = cards[i + 1];
         const position = i;
         tl.to(
@@ -63,15 +61,6 @@ export default function HistoryTimeLine({
             direction: 1,
           },
           position,
-        );
-        tl.to(
-          nextText,
-          {
-            opacity: 1,
-            duration: .4,
-            ease: "power2.out",
-          },
-          position + 0.4,
         );
       }
     },

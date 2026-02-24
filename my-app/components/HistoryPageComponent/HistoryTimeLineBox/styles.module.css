@@ -4,6 +4,8 @@
   width: 100%;
   overflow: hidden;
   padding: 2.5rem;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 .cardContainer {
   position: relative;
@@ -34,7 +36,7 @@
 }
 .historyTimeLineTextArea {
   height: 100%;
-  width: 50%;
+  width: 70%;
   position: absolute;
   z-index: 5;
 
@@ -62,7 +64,6 @@
 @media (max-width: 768px) {
   .historyTimeLineBox {
     padding: 1rem;
-
   }
   .historyTimeLineText {
     font-size: 0.8rem;
@@ -85,7 +86,7 @@
   .cardContainer {
     display: flex;
     flex-direction: column-reverse;
-        background: #f2a65a;
+    background: #f2a65a;
     background: linear-gradient(
       90deg,
       rgba(242, 166, 90, 1) 0%,

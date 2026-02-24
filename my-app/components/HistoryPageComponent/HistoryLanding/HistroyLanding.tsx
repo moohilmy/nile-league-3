@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
+import HistroyLandingImg from '@/public/history-landing.png'
 export default function HistroyLanding() {
   return (
     <>
       <div className={styles.historyLanding}>
         <Image
-          src={"/history-landing.png"}
+          src={HistroyLandingImg}
           alt="history-landing-img"
           fill
           className={styles.historyImg}

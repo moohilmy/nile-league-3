@@ -37,7 +37,7 @@ const champions: {
   {
     name: "ghazl el mahalla",
     teamID: 5,
-    img: "/team-logo/ghazl.svg",
+    img: "/team-logo/Ghazl.svg",
     count: 1,
   },
   {
