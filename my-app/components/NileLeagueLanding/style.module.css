@@ -1,11 +1,6 @@
 .landingContainer {
-  height: 45vh;
-  background: #3a3a3a;
-  background: linear-gradient(
-    149deg,
-    rgba(58, 58, 58, 1) 73%,
-    rgba(190, 151, 80, 1) 90%
-  );
+  min-height: 55vh;
+background: linear-gradient(100deg,rgba(0, 0, 0, 0.59) 30%, rgba(104, 40, 158, 1) 100%);
   position: relative;
   display: flex;
   align-items: center;

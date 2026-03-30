@@ -37,6 +37,7 @@
 .standingsTableBody tr {
   border-bottom: 2px solid var(--warm-gray);
   border-left: 4px solid transparent;
+  transition: all 0.3s ease;
 }
 .standingsTableBody tr:nth-child(1) {
   border-left: 4px solid var(--SecondColor);
@@ -53,6 +54,10 @@
 .standingsTableBody td {
   padding: 1rem 0.2rem;
   position: relative;
+}
+.standingsTableBody tr td:hover{
+  color: var(--light-purple);
+  text-decoration: underline;
 }
 @media (max-width: 768px) {
   .standingsTeamInfo{

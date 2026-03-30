@@ -37,7 +37,7 @@
   font-weight: 700;
 }
 .historyLandingSpanText {
-  color: var(--SecondColor);
+  color: var(--light-purple);
 }
 .historyLandingSubMasterText {
   color: var(--soft-ivory);
